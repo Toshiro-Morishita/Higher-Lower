@@ -15,7 +15,6 @@ body {
 .player {
   width: 50px;
   height: 70px;
-  background: #fff
 }
 
 .controls {
@@ -56,4 +55,44 @@ body {
 
 #lower {
   top: 70px;
+}
+
+.card {
+  width: 50px;
+  height: 70px;
+  background: #fff;
+  border-radius: 5px;
+  line-height: 70px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-back {
+  background: #f1c40f;
+  color: #fff;
+}
+
+#wrapper:active {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+#wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.3s;
+}
+
+.card-back,
+.card-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.player {
+  perspective: 100px;
 }
