@@ -104,3 +104,14 @@ body {
 .dealer {
   cursor: pointer;
 }
+
+.btn:hover {
+  margin-top: 2px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn.disabled {
+  opacity: 0.4;
+  margin-top: 2px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
