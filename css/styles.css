@@ -71,7 +71,7 @@ body {
   color: #fff;
 }
 
-#wrapper:active {
+#wrapper.open {
   transform: rotateY(180deg);
 }
 
@@ -95,4 +95,12 @@ body {
 
 .player {
   perspective: 100px;
+}
+
+#result.hidden {
+  visibility: hidden;
+}
+
+.dealer {
+  cursor: pointer;
 }
